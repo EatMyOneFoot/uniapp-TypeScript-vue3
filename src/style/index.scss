@@ -1,0 +1,102 @@
+// page {
+//   background: rgba(240, 235, 230, 1);
+// }
+
+// 禁止选中文本
+.can-not-select {
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+/* flex布局 */
+.flex {
+  display: flex;
+}
+
+.flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 换行 */
+.e-flex-wrap {
+  flex-wrap: wrap;
+  align-content: center
+}
+
+/* 不换行 */
+.e-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* start--文本行数限制--start */
+.e-line-1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.e-line-2 {
+  -webkit-line-clamp: 2;
+}
+
+.e-line-3 {
+  -webkit-line-clamp: 3;
+}
+
+.e-line-4 {
+  -webkit-line-clamp: 4;
+}
+
+.e-line-5 {
+  -webkit-line-clamp: 5;
+}
+
+.e-line-2,
+.e-line-3,
+.e-line-4,
+.e-line-5 {
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* end--文本行数限制--end */
+
+/* 文字左对齐 */
+.e-text-left {
+  text-align: left;
+}
+
+/* 文字居中对齐 */
+.e-text-center {
+  text-align: center;
+}
+
+/* 文字右对齐 */
+.e-text-right {
+  text-align: right;
+}
+
+/* 鼠标指针样式，像指针指向链接一样，指针变成手行 */
+.pointer {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024rpx) {
+  page {
+    width: 40vw;
+    margin: auto;
+  }
+}
